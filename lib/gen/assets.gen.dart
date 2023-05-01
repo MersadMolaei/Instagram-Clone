@@ -14,6 +14,10 @@ import 'package:flutter/services.dart';
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/Instagram-Meta-Logo-PNG.png
+  AssetGenImage get instagramMetaLogoPNG =>
+      const AssetGenImage('assets/icons/Instagram-Meta-Logo-PNG.png');
+
   /// File path: assets/icons/Live.svg
   SvgGenImage get live => const SvgGenImage('assets/icons/Live.svg');
 
@@ -45,6 +49,10 @@ class $AssetsIconsGen {
   SvgGenImage get instagramLogo =>
       const SvgGenImage('assets/icons/instagram_logo.svg');
 
+  /// File path: assets/icons/instagramlogosplash.png
+  AssetGenImage get instagramlogosplash =>
+      const AssetGenImage('assets/icons/instagramlogosplash.png');
+
   /// File path: assets/icons/messanger.svg
   SvgGenImage get messanger => const SvgGenImage('assets/icons/messanger.svg');
 
@@ -56,7 +64,8 @@ class $AssetsIconsGen {
       const SvgGenImage('assets/icons/notify_selected.svg');
 
   /// List of all assets
-  List<SvgGenImage> get values => [
+  List<dynamic> get values => [
+        instagramMetaLogoPNG,
         live,
         addNew,
         cameraIcon,
@@ -66,6 +75,7 @@ class $AssetsIconsGen {
         homeSelected,
         igtv,
         instagramLogo,
+        instagramlogosplash,
         messanger,
         notify,
         notifySelected

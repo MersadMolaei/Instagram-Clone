@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:tec/route/names.dart';
 
+import '../gen/assets.gen.dart';
+
 class Splash extends StatefulWidget {
   const Splash({Key? key}) : super(key: key);
 
@@ -24,9 +26,16 @@ class _SplashState extends State<Splash> {
         body: Container(
       height: double.infinity,
       width: double.infinity,
-      color: Colors.white,
-      child: const Center(
-        child: Text("Instagram"),
+      color: Colors.black,
+      child:  Column(
+        children: [
+          Expanded(
+            child: Image.asset(Assets.icons.instagramlogosplash.path),
+          ),
+          Text('from',style: TextStyle(color: Colors.blueGrey.shade700),),
+          Image.asset(Assets.icons.instagramMetaLogoPNG.path),
+          const SizedBox(height: 30,)
+        ],
       ),
     ));
   }
